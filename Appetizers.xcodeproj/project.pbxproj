@@ -15,6 +15,9 @@
 		A30095942B264F0D0092C0A8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095932B264F0D0092C0A8 /* AccountView.swift */; };
 		A30095962B264F200092C0A8 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095952B264F200092C0A8 /* OrderView.swift */; };
 		A30095982B265CF20092C0A8 /* AppetizerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095972B265CF20092C0A8 /* AppetizerData.swift */; };
+		A300959A2B2CD06E0092C0A8 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095992B2CD06E0092C0A8 /* AppetizerListCell.swift */; };
+		A300959C2B2CD4AD0092C0A8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A300959B2B2CD4AD0092C0A8 /* NetworkManager.swift */; };
+		A300959E2B2CDEB60092C0A8 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A300959D2B2CDEB60092C0A8 /* APError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		A30095932B264F0D0092C0A8 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		A30095952B264F200092C0A8 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		A30095972B265CF20092C0A8 /* AppetizerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerData.swift; sourceTree = "<group>"; };
+		A30095992B2CD06E0092C0A8 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
+		A300959B2B2CD4AD0092C0A8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A300959D2B2CDEB60092C0A8 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +65,17 @@
 		A300957E2B264D010092C0A8 /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
-				A30095972B265CF20092C0A8 /* AppetizerData.swift */,
 				A300957F2B264D010092C0A8 /* AppetizersApp.swift */,
-				A30095812B264D010092C0A8 /* AppetizerTabView.swift */,
+				A30095972B265CF20092C0A8 /* AppetizerData.swift */,
 				A30095912B264EEB0092C0A8 /* AppetizerListView.swift */,
+				A300959B2B2CD4AD0092C0A8 /* NetworkManager.swift */,
+				A300959D2B2CDEB60092C0A8 /* APError.swift */,
+				A30095812B264D010092C0A8 /* AppetizerTabView.swift */,
 				A30095932B264F0D0092C0A8 /* AccountView.swift */,
 				A30095952B264F200092C0A8 /* OrderView.swift */,
 				A30095832B264D020092C0A8 /* Assets.xcassets */,
 				A30095852B264D020092C0A8 /* Preview Content */,
+				A30095992B2CD06E0092C0A8 /* AppetizerListCell.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -150,8 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A30095982B265CF20092C0A8 /* AppetizerData.swift in Sources */,
+				A300959E2B2CDEB60092C0A8 /* APError.swift in Sources */,
+				A300959A2B2CD06E0092C0A8 /* AppetizerListCell.swift in Sources */,
 				A30095942B264F0D0092C0A8 /* AccountView.swift in Sources */,
 				A30095822B264D010092C0A8 /* AppetizerTabView.swift in Sources */,
+				A300959C2B2CD4AD0092C0A8 /* NetworkManager.swift in Sources */,
 				A30095802B264D010092C0A8 /* AppetizersApp.swift in Sources */,
 				A30095922B264EEB0092C0A8 /* AppetizerListView.swift in Sources */,
 				A30095962B264F200092C0A8 /* OrderView.swift in Sources */,
