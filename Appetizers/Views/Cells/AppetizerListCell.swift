@@ -14,16 +14,11 @@ struct AppetizerListCell: View {
     var body: some View {
         HStack {
             // Asynchronously load the image from the URL
-            AsyncImage(url: URL(string: appetizer.imageURL)) { image in
-                image
-                    .resizable()
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 120, height: 90)
                     .cornerRadius(8)
-            } placeholder: {
-                // Placeholder while the image is loading (you can customize this)
-                ProgressView()
-            }
+            
             
             VStack(alignment: .leading, spacing: 5) {
                 Text(appetizer.name)

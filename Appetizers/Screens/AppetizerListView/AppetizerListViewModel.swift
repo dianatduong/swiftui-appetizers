@@ -11,10 +11,15 @@ final class AppetizerListViewModel: ObservableObject {
     
     @Published var appetizers: [AppetizerData] = []
     @Published var alertItem: AlertItem?
+    @Published var isLoading = false
     
     func getAppetizers() {
+        isLoading = true //start laoding
+        
         NetworkManager.shared.getAppetizers { result in
             DispatchQueue.main.async { [self] in
+                isLoading = false // done loading
+
                 switch result {
                 case .success(let appetizers):
                     self.appetizers = appetizers
