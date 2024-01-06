@@ -23,6 +23,7 @@
 		A30095A42B3B61000092C0A8 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095A32B3B61000092C0A8 /* LoadingView.swift */; };
 		A30095A62B3B69890092C0A8 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095A52B3B69890092C0A8 /* Color+Ext.swift */; };
 		A30095A82B3F63970092C0A8 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095A72B3F63970092C0A8 /* RemoteImage.swift */; };
+		A30095B82B435AC30092C0A8 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095B72B435AC30092C0A8 /* AppetizerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		A30095A32B3B61000092C0A8 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A30095A52B3B69890092C0A8 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		A30095A72B3F63970092C0A8 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		A30095B72B435AC30092C0A8 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				A30095912B264EEB0092C0A8 /* AppetizerListView.swift */,
 				A300959F2B34D8C10092C0A8 /* AppetizerListViewModel.swift */,
+				A30095B72B435AC30092C0A8 /* AppetizerDetailView.swift */,
 			);
 			path = AppetizerListView;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				A30095822B264D010092C0A8 /* AppetizerTabView.swift in Sources */,
 				A300959C2B2CD4AD0092C0A8 /* NetworkManager.swift in Sources */,
 				A30095A82B3F63970092C0A8 /* RemoteImage.swift in Sources */,
+				A30095B82B435AC30092C0A8 /* AppetizerDetailView.swift in Sources */,
 				A30095802B264D010092C0A8 /* AppetizersApp.swift in Sources */,
 				A30095A22B3758600092C0A8 /* Alert.swift in Sources */,
 				A30095922B264EEB0092C0A8 /* AppetizerListView.swift in Sources */,
