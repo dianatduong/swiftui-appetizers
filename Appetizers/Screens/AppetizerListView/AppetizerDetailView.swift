@@ -12,6 +12,8 @@ struct AppetizerDetailView: View {
     
     var appetizer: AppetizerData
     
+    @Binding var isShowingDetail: Bool
+    
     var body: some View {
         VStack {
             Image("asian-flank-steak")
@@ -86,7 +88,8 @@ struct AppetizerDetailView: View {
         .cornerRadius(12)
         .shadow(radius: 40)
         .overlay(Button {
-            print("button pressed")
+            //when ontap - we are switching the isSHowingDetail to fale (hiding the detailsView)
+            isShowingDetail = false
         } label: {
             ZStack {
                 Circle()
@@ -106,7 +109,8 @@ struct AppetizerDetailView: View {
 
 struct AppetizerDetailViewPreviews: PreviewProvider {
     static var previews: some View {
-        AppetizerDetailView(appetizer: MockData.sampleAppetizer)
+        AppetizerDetailView(appetizer: MockData.sampleAppetizer,
+                            isShowingDetail: .constant(true))
             .previewLayout(.sizeThatFits)
     }
 }
