@@ -15,6 +15,8 @@ struct AppetizerListView: View {
     //detail view is hidden on default
     @State private var isShowingDetail = false
     
+    //which appetizer was selcted - optional because no data to start
+    @State private var selectedAppetizer: AppetizerData?
     
     var body: some View {
         
@@ -24,6 +26,7 @@ struct AppetizerListView: View {
                 List(viewModel.appetizers) { appetizer in
                    AppetizerListCell(appetizer: appetizer)
                         .onTapGesture {
+                            selectedAppetizer = appetizer
                             isShowingDetail = true
                         }
                 }
@@ -37,7 +40,8 @@ struct AppetizerListView: View {
             .scrollDisabled(isShowingDetail)
             
             if isShowingDetail {
-                AppetizerDetailView(appetizer: MockData.sampleAppetizer,
+                //show the detail screen of the selected appetizer
+                AppetizerDetailView(appetizer: selectedAppetizer!,
                                     isShowingDetail: $isShowingDetail)
             }
             
