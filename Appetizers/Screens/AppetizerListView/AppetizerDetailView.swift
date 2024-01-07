@@ -24,6 +24,7 @@ struct AppetizerDetailView: View {
                 Text(appetizer.name)
                     .font(.title2)
                     .fontWeight(.semibold)
+                    .padding()
                 
                 Text(appetizer.description)
                     .multilineTextAlignment(.center)
@@ -47,7 +48,7 @@ struct AppetizerDetailView: View {
                             .bold()
                             .font(.caption)
                         
-                        Text("\(appetizer.carbs) g")
+                        Text("\(appetizer.carbs)g")
                             .foregroundColor(.secondary)
                             .fontWeight(.semibold)
                             .italic()
@@ -58,7 +59,7 @@ struct AppetizerDetailView: View {
                             .bold()
                             .font(.caption)
                         
-                        Text("\(appetizer.carbs) g")
+                        Text("\(appetizer.carbs)g")
                             .foregroundColor(.secondary)
                             .fontWeight(.semibold)
                             .italic()
