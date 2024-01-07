@@ -12,12 +12,6 @@ struct AppetizerListView: View {
     //initalizing the view model
     @StateObject var viewModel = AppetizerListViewModel()
     
-    //detail view is hidden on default
-    @State private var isShowingDetail = false
-    
-    //which appetizer was selcted - optional because no data to start
-    @State private var selectedAppetizer: AppetizerData?
-    
     var body: some View {
         
         ZStack {
@@ -26,8 +20,8 @@ struct AppetizerListView: View {
                 List(viewModel.appetizers) { appetizer in
                    AppetizerListCell(appetizer: appetizer)
                         .onTapGesture {
-                            selectedAppetizer = appetizer
-                            isShowingDetail = true
+                            viewModel.selectedAppetizer = appetizer
+                            viewModel.isShowingDetail = true
                         }
                 }
                 .navigationTitle("🍟 Appetizers")
@@ -36,13 +30,13 @@ struct AppetizerListView: View {
                 viewModel.getAppetizers()
             }
             // blur when true
-            .blur(radius: isShowingDetail ? 20 : 0)
-            .scrollDisabled(isShowingDetail)
+            .blur(radius: viewModel.isShowingDetail ? 20 : 0)
+            .scrollDisabled(viewModel.isShowingDetail)
             
-            if isShowingDetail {
+            if viewModel.isShowingDetail {
                 //show the detail screen of the selected appetizer
-                AppetizerDetailView(appetizer: selectedAppetizer!,
-                                    isShowingDetail: $isShowingDetail)
+                AppetizerDetailView(appetizer: viewModel.selectedAppetizer!,
+                                    isShowingDetail: $viewModel.isShowingDetail)
             }
             
             //top view  - only when loading

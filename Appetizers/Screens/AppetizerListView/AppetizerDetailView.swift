@@ -49,10 +49,12 @@ struct AppetizerDetailView: View {
             .padding(.bottom, 30)
         } // end VStack app details
         
+        //VStack styles
         .frame(width: 300, height: 525)
         .background(Color(.systemBackground))
         .cornerRadius(12)
         .shadow(radius: 40)
+        
         .overlay(Button {
             //when ontap - we are switching the isSHowingDetail to fale (hiding the detailsView)
             isShowingDetail = false
@@ -70,8 +72,6 @@ struct AppetizerDetailViewPreviews: PreviewProvider {
             .previewLayout(.sizeThatFits)
     }
 }
-
-
 
 
 struct NutritionInfo: View {

@@ -12,6 +12,11 @@ final class AppetizerListViewModel: ObservableObject {
     @Published var appetizers: [AppetizerData] = []
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
+    //detail view is hidden on default
+    @Published var isShowingDetail = false
+    
+    //which appetizer was selcted - optional because no data to start
+    @Published var selectedAppetizer: AppetizerData?
     
     func getAppetizers() {
         isLoading = true //start laoding
