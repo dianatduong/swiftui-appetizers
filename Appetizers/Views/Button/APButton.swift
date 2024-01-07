@@ -9,7 +9,7 @@ import SwiftUI
 
 struct APButton: View {
     
-    let title: String
+    let title: LocalizedStringKey
     
     var body: some View {
         Text(title)

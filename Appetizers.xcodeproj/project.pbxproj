@@ -25,6 +25,7 @@
 		A30095A82B3F63970092C0A8 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095A72B3F63970092C0A8 /* RemoteImage.swift */; };
 		A30095B82B435AC30092C0A8 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095B72B435AC30092C0A8 /* AppetizerDetailView.swift */; };
 		A30095BD2B4B26780092C0A8 /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095BC2B4B26780092C0A8 /* APButton.swift */; };
+		A30095BF2B4B29180092C0A8 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30095BE2B4B29180092C0A8 /* XDismissButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		A30095A72B3F63970092C0A8 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		A30095B72B435AC30092C0A8 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		A30095BC2B4B26780092C0A8 /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
+		A30095BE2B4B29180092C0A8 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				A30095BC2B4B26780092C0A8 /* APButton.swift */,
+				A30095BE2B4B29180092C0A8 /* XDismissButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			files = (
 				A30095982B265CF20092C0A8 /* AppetizerData.swift in Sources */,
 				A300959E2B2CDEB60092C0A8 /* APError.swift in Sources */,
+				A30095BF2B4B29180092C0A8 /* XDismissButton.swift in Sources */,
 				A300959A2B2CD06E0092C0A8 /* AppetizerListCell.swift in Sources */,
 				A30095A02B34D8C10092C0A8 /* AppetizerListViewModel.swift in Sources */,
 				A30095A62B3B69890092C0A8 /* Color+Ext.swift in Sources */,
