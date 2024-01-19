@@ -32,5 +32,7 @@ struct AlertContext {
                                             message: Text("Unable to complete your request at this time. Please check your internet connection."),
                                             dismissButton: .default(Text("OK")))
     
+    
+    
 }
 
