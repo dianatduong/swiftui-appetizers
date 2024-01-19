@@ -22,12 +22,20 @@ final class AccountViewModel: ObservableObject {
     
     var isValidForm: Bool {
         guard !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty else {
+            
+            //alert
+            alertItem = AlertContext.invalidForm
+            
             //if any of these fields are empty
             return false
         }
         
         //check to see if email is valid
         guard email.isValidEmail else {
+            
+            //alert
+            alertItem = AlertContext.invalidEmail
+            
             return false
         }
         
