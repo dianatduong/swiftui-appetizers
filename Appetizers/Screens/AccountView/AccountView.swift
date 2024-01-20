@@ -27,7 +27,8 @@ struct AccountView: View {
                         DatePicker("Birthday", selection: $viewModel.birthdate, displayedComponents: .date)
                         
                         Button {
-                            print("save")
+                            //func to check if form is valid
+                            viewModel.saveChanges()
                         } label: {
                             Text("Save Changes")
                         }
@@ -42,8 +43,13 @@ struct AccountView: View {
             }
             .navigationTitle("🐙 My Account")
         }
+        //implementing the alerts for the form fields
         .alert(item: $viewModel.alertItem) { alertItem in
-            Alert
+            Alert(title: alertItem.title, 
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
+            
+            
         }
 
     }

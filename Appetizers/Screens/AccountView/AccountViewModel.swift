@@ -19,9 +19,8 @@ final class AccountViewModel: ObservableObject {
     
     @Published var alertItem: AlertItem?
    
-    
+    //error handling
     var isValidForm: Bool {
-        
         //check to see if these fields are empty
         guard !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty else {
             //alert for invalid Form
@@ -29,15 +28,19 @@ final class AccountViewModel: ObservableObject {
             //if any of these fields are empty
             return false
         }
-        
         //check to see if email is valid
         guard email.isValidEmail else {
             //alert for invalid Email
             alertItem = AlertContext.invalidEmail
             return false
         }
-        
         return true //if pass
+    }
+    
+    func saveChanges() {
+        guard isValidForm else { return }
+        
+        print("Changes have been saved succesfully")
     }
     
 }
