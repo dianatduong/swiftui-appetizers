@@ -42,6 +42,9 @@ struct AccountView: View {
             }
             .navigationTitle("🐙 My Account")
         }
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: <#T##Text#>, message: <#T##Text?#>, primaryButton: <#T##Alert.Button#>, secondaryButton: <#T##Alert.Button#>)
+        }
 
     }
 }
