@@ -43,15 +43,13 @@ struct AccountView: View {
             }
             .navigationTitle("🐙 My Account")
         }
+        
         //implementing the alerts for the form fields
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title, 
                   message: alertItem.message,
                   dismissButton: alertItem.dismissButton)
-            
-            
         }
-
     }
 }
 
